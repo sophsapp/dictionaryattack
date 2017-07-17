@@ -28,11 +28,11 @@ function checkPassword() {
 
     // Iterate over the list of words to see if the password is contained in the dictionary word list
     /* ADD YOUR CODE BELOW  - to add a for loop to iterate "wordsList" */
-    for (i = 0;1<wordlist.length;i++) { /* Put your loop statement here. */
+    for (i = 0;1<wordsList.length;i++) { /* Put your loop statement here. */
       /* ADD YOUR CODE BELOW - If the password variation matches the dictionary word, it's not a secure password */
-      if (pw = wordlist[i]) {
+      if (pw = wordsList[i]) {
         isSecure = false;
-        matchingword = wordlist[i];
+        matchingWord = wordsList[i];
       }
     }
 
@@ -52,8 +52,6 @@ function getVariations(pw) {
   pw = pw.replace(/7/g, "t");
   pw = pw.replace(/9/g, "g");
   pw = pw.replace(/[5$]/g, "s");
-  pw = pw.replace(/);
-  pw = pw.replace(/, "");
 
   /* ADD YOUR CODE BELOW FOR THE OTHER NUMBERS OR CHARACHTERS */
 
